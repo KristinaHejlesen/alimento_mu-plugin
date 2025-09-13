@@ -19,4 +19,4 @@ jobs:
           target-server: ssh.cb1uqqgr0.service.one
           remote-user: cb1uqqgr0_ssh
           private-ssh-key: ${{ secrets.SSH_KEY }}
-          destination-path: /webroots/by-route/alimento.kristinahejlesen.dk_/wp-content/themes/alimento
+          destination-path: /webroots/by-route/alimento.kristinahejlesen.dk_/wp-content/mu-plugins
