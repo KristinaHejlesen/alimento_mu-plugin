@@ -20,22 +20,24 @@
         'menu_icon' => 'dashicons-admin-customizer'
     ));
 
-    register_post_type('book', array(
+    register_post_type('recipe', array(
         'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
-        'rewrite' => array('slug' => 'book'),
+        'rewrite' => array('slug' => 'recipe'),
         'has_archive' => true,
         'public' => true,
         'show_in_rest' => true,
         'labels' => array(
-            'name' => 'Bookd',
-            'add_new_item' => 'Add New Book',
-            'edit_item' => 'Edit Book',
-            'all_items' => "All Bookd",
-            'singular_name' => 'Book'
+            'name' => 'recipe',
+            'add_new_item' => 'Add New recipe',
+            'edit_item' => 'Edit recipe',
+            'all_items' => "All recipes",
+            'singular_name' => 'recipe'
 
         ),
-        'menu_icon' => 'dashicons-admin-book'
+        'menu_icon' => 'dashicons-food'
     ));
+
+    //evt skal vi lave en her til vores forfatter.
 }
 //vi kalder funktionen blog_post_types
 add_action('init', 'blog_post_types');
