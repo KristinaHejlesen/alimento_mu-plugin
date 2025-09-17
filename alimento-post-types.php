@@ -21,7 +21,7 @@
     ));
 
     register_post_type('recipe', array(
-        'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+        'supports' => array('title', 'excerpt', 'thumbnail'),
         'rewrite' => array('slug' => 'recipe'),
         'has_archive' => true,
         'public' => true,
